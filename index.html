@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Gallery - Spotify Clone</title>
+    
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <!-- Bootstrap and FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎵 MyMusic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Songs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Albums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Artists</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Featured Playlists -->
+    <div class="container mt-4">
+        <h2>🔥 Featured Playlists</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="playlist-card">
+                    <img src="https://source.unsplash.com/300x300/?music,party" alt="Playlist">
+                    <h5>Party Hits</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="playlist-card">
+                    <img src="https://source.unsplash.com/300x300/?music,chill" alt="Playlist">
+                    <h5>Chill Vibes</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="playlist-card">
+                    <img src="https://source.unsplash.com/300x300/?music,workout" alt="Playlist">
+                    <h5>Workout Energy</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Songs -->
+    <div class="container mt-4">
+        <h2>🎶 Trending Songs</h2>
+        <ul class="song-list">
+            <li>
+                <img src="https://source.unsplash.com/50x50/?music" alt="Song">
+                <div>
+                    <strong>Blinding Lights</strong> - The Weeknd
+                </div>
+                <button class="btn btn-success btn-sm ms-auto"><i class="fa fa-play"></i></button>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/50x50/?concert" alt="Song">
+                <div>
+                    <strong>Shape of You</strong> - Ed Sheeran
+                </div>
+                <button class="btn btn-success btn-sm ms-auto"><i class="fa fa-play"></i></button>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/50x50/?pop" alt="Song">
+                <div>
+                    <strong>Levitating</strong> - Dua Lipa
+                </div>
+                <button class="btn btn-success btn-sm ms-auto"><i class="fa fa-play"></i></button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 MyMusic | Designed with ❤️</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
